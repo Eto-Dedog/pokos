@@ -1,0 +1,543 @@
+/* Основные */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+@font-face {
+    font-family: 'Prompt-Regular';
+    src: url(../fonts/Prompt-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Prompt-Bold';
+    src: url(../fonts/Prompt-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Oswald-Bold';
+    src: url(../fonts/Oswald-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Prompt-SemiBold';
+    src: url(../fonts/Prompt-SemiBold.ttf);
+}
+
+html {
+    font-family: 'Prompt-Regular', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Голова */
+
+.header__block{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+
+.header__logo{
+    position: relative;
+}
+
+.header__logo::before{
+    content: '';
+    width: 41px;
+    height: 1px;
+    background: #E3E3E3;
+    position: absolute;
+    transform: rotate(-90deg);
+    right: -50%;
+    top: 50%;
+}
+
+.header__burger{
+    display: flex;
+    margin-left: -20%;
+    cursor: pointer;
+}
+
+.burger__title{
+    color: #219653;
+    margin-left: 20px;
+}
+
+.header__info{
+    display: flex;
+}
+
+.header__info__link{
+    color: #219653;
+    margin-right: 40px;
+}
+
+.header__info__phone__link{
+    padding-left: 30px;
+    color: #000000;
+    font-family: 'Oswald-Bold', sans-serif;
+    text-decoration: none;
+    font-size: 17px;
+    background: url(../img/header/phone.svg) no-repeat left center;
+}
+/* company */
+
+.company__block{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.company__text{
+    margin-top: 45px;
+}
+
+.section__title{
+    font-family: 'Oswald-Bold', sans-serif;
+    font-size: 34px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #333333;
+    line-height: 50px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.section__title::before{
+    content: '';
+    width: 34px;
+    height: 8px;
+    background: #219653;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 45%;
+    left: -10px;
+}
+
+.section__text{
+    line-height: 27px;
+    color: #333333;
+}
+/* Наши клиенты */
+.customers__title{
+    margin-bottom: 45px;
+}
+
+.customers__cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.customers__card{
+    text-decoration: none;
+    position: relative;
+    color: #000000;
+    font-family: 'Prompt-SemiBold', sans-serif;
+    font-weight: 600;
+    line-height: 24px;   
+}
+
+.customers__card--one::before{
+    content: 'Лукойл';
+    position: absolute;
+    bottom:-20px;
+}
+
+.customers__card--two::before{
+    content: 'Макси';
+    position: absolute;
+    bottom:-10px;
+}
+
+.customers__card--three::before{
+    content: 'Молочный комбинат';
+    position: absolute;
+    bottom:-28px;
+}
+
+.customers__card--four::before{
+    content: 'Кировспецмонтаж';
+    position: absolute;
+    bottom:-20px;
+}
+
+.customers__card--five::before{
+    content: 'УК Радуга';
+    position: absolute;
+    bottom:-25px;
+}
+/* Ценности */
+.values{
+    margin-top: 135px;
+    background: rgba(33, 150, 83, 0.03) ;
+}
+
+.values__block{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.values__box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.values__box__text{
+    max-width: 624px;
+}
+
+/* Доверие */
+.trust__block{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.trust__cards{
+    margin-top: 100px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.trust__card{
+    position: relative;
+}
+
+.trust__card::after{
+    content: '. . .';
+    position: absolute;
+    font-size: 45px;
+    top: -20px;
+    right: -35px;
+}
+
+.trust__card--one::before{
+    content: '01';
+    color: #EAEAEA;
+    font-family: 'Oswald-Bold', sans-serif;
+    font-size: 68px;
+    position: absolute;
+    top: -50px;
+    left: 25px;
+    z-index: -1;
+}
+
+.trust__card--two::before{
+    content: '02';
+    color: #EAEAEA;
+    font-family: 'Oswald-Bold', sans-serif;
+    font-size: 68px;
+    position: absolute;
+    top: -50px;
+    left: 25px;
+    z-index: -1;
+}
+
+.trust__card--three::before{
+    content: '03';
+    color: #EAEAEA;
+    font-family: 'Oswald-Bold', sans-serif;
+    font-size: 68px;
+    position: absolute;
+    top: -50px;
+    left: 25px;
+    z-index: -1;
+}
+
+.trust__card--four::before{
+    content: '04';
+    color: #EAEAEA;
+    font-family: 'Oswald-Bold', sans-serif;
+    font-size: 68px;
+    position: absolute;
+    top: -50px;
+    left: 25px;
+    z-index: -1;
+}
+
+.trust__card--five::before{
+    content: '05';
+    color: #EAEAEA;
+    font-family: 'Oswald-Bold', sans-serif;
+    font-size: 68px;
+    position: absolute;
+    top: -50px;
+    left: 25px;
+    z-index: -1;
+}
+
+.trust__card__img{
+    padding-left: 5px;
+}
+
+.trust__card__title{
+    font-family: 'Prompt-Bold', sans-serif;
+    max-width: 130px;
+    color: #333333;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.trust__text{
+    max-width: 580px;
+    text-align: center;
+    margin: auto;
+}
+
+/* Примеры */
+.examples__block{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 70px;
+}
+.examples__cards{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px ;
+}
+
+.examples__card{
+    padding: 5px;
+}
+
+.examples__link{
+    text-align: center;
+    color: #000000;
+    line-height: 24px;
+}
+/* подвал */
+.footer{
+    background: #26292B;
+}
+/* подвал голова */
+.footer__head__block{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    display: flex;
+}
+
+.footer__col{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__col:not(:last-child){
+    margin-right: 230px;
+}
+
+.footer__col__title{
+    color: #ffffff;
+    font-family: 'Prompt-Bold',sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer__col__link{
+    color: #ffffff;
+    text-decoration: none;
+    line-height: 24px;
+}
+
+.footer__col__link:not(:last-child){
+    margin-bottom: 15px;
+}
+
+/* подвал низ */
+.footer__bottom{
+    border-top: 1px solid #373737;
+    padding-top: 32px;
+    padding-bottom: 25px;
+}
+.footer__bottom__block{
+    display: flex;
+    align-items: center;
+}
+
+.footer__copyright__box{
+    display: flex;
+    margin-right: 117px;
+}
+
+.footer__copyright{
+    color: #ffffff;
+    max-width: 313px;
+}
+
+.footer__phone__box{
+    display: flex;
+    margin-right: 297px;
+}
+
+.footer__phone{
+    font-family: 'Oswald-Bold', sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.fooner__logo__box{
+    display: flex;
+}
+
+.footer__logo__link{
+    margin-bottom: -8px;
+}
+/* anim */
+
+.header__info__link:hover{
+    color: #ffffff;
+    transition: 0.5s;
+    background: #219653;
+    border-radius: 50px;
+}
+
+.examples__link:hover{
+    color: #219653;
+    transition: 0.5s;
+}
+
+.footer__col__link:hover{
+    color: #219653;
+    transition: 0.5s;
+}
+
+.footer__phone:hover{
+    color: #219653;
+    transition: 0.5s;
+}
+
+.header__info__phone__link:hover{
+    color: #219653;
+    transition: 0.5s;
+}
+
+@media (max-width:1200px) {
+    .header__block, .company__block, .customers__block, .trust__block, .examples__block, .footer__head__block, .footer__bottom__block{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .trust__cards{
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    .header__logo::before{
+        display: none;
+    }
+    .header__burger{
+        margin-left: 0px;
+        margin-top: 20px;
+        order: 3;
+    }
+}
+@media (max-width:992px) {
+    .customers__cards{
+        flex-direction: column-reverse;
+    }
+    .customers__card{
+        margin-top: 30px;
+    }
+    .values__box{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .values__box__text{
+        justify-content: center;
+    }
+    .values__box__img{
+        margin-top: 25px;
+    }
+    .section__title{
+        font-size: 24px;
+    }
+    .trust__cards{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .trust__card{
+        margin-top: 30px;
+    }
+    .trust__card::after{
+        display: none;
+    }
+    .trust__card--two{
+        margin-left: 50px;
+    }
+    .trust__card--three{
+        margin-left: 100px;
+    }
+    .trust__card--four{
+        margin-left: 150px;
+    }
+    .trust__card--five{
+        margin-left: 200px;
+    }
+    .footer__bottom__block{
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .footer__copyright__box{
+        margin-right: 0px;
+    }
+    .footer__phone__box{
+        margin-top: 25px;
+        margin-bottom: 25px;
+        margin-right: 0px;
+    }
+    .footer__col:not(:last-child){
+        margin-right: 0px;
+    }
+    .footer__col{
+        margin-top: 25px;
+    }
+    .footer__head__block{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media (max-width:768px) {
+    .header__block{
+        flex-direction: column;
+    }
+    .header__info{
+        flex-direction: column;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .header__info__link{
+        margin-right: 0px;
+    }
+    .header__burger{
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media (max-width:618px) {
+    .examples__cards{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (max-width:576px) {}
